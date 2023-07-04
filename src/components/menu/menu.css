@@ -8,3 +8,30 @@
     display: flex;
     padding: 0;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .text-animation {
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    animation: slide-in 25s ease-out forwards;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      width: 0;
+    }
+    80% {
+      width: 50%;
+    }
+  }
+  
